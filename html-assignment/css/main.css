@@ -1,13 +1,24 @@
 body {
     font-size: 18pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header, footer {
     background-color: #c36;
+    padding: 10px 10% 10px;
 }
 
 .site-title {
     color: #ccc;
+}
+
+article {
+    padding: 0px 20%;
+}
+
+blockquote {
+    background-color: #ddd;
+    border: thick ridge #222;
 }
 
 #my-image {
@@ -22,10 +33,16 @@ li:nth-child(odd) {
     background-color: #ddd;
 }
 
+dt {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
 a {
     text-decoration: none;
     background-color: #6c3;
     border: thick solid #4a1;
+    border-radius: 3px;
 }
 
 a:hover {
