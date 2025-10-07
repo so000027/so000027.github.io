@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Website</title>
+    <title>Styling the HTML Website</title>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="site-title">
         <h1>William So</h1>
-        <a href="notes.html">Notes</a>
+        <nav>
+            <a href="notes.html">Notes</a>
+        </nav>
         <hr>
     </header>
     <article>
@@ -23,8 +26,8 @@
             as a host at a local escape room facility.
         </p>
         <blockquote>
-            Beware that, when fighting monsters, you yourself do not become a monster...
-            for when you gaze long into the abyss. The abyss gazes also into you.
+            "Beware that, when fighting monsters, you yourself do not become a monster...
+            for when you gaze long into the abyss. The abyss gazes also into you."
             <cite>Friedrich Nietzsche</cite>
         </blockquote>
         <p>
@@ -36,45 +39,21 @@
             of the hobby. My dream is to make my living in the tabletop gaming industry both
             as a game designer and as a professional game master.
         </p>
-        <img src="images/me.png" alt="a picture of me" title="Hello, it's me!" width="400" height="500">
+        <img id="my-image" src="images/me.png" alt="a picture of me" title="Hello, it's me!" width="400" height="500">
         <h2>My Hobbies</h2>
         <p>
             <em>D&D</em> isn't the only thing I do for fun! Here are some of the hobbies I enjoy:
         </p>
         <ul>
-            <li>collecting
-                <ul>
-                    <li>comics</li>
-                    <li>dice</li>
-                    <li>figurines</li>
-                </ul>
-            </li>
-            <li>games & puzzles
-                <ul>
-                    <li>chess</li>
-                    <li><em>Clank!</em></li>
-                    <li><em>Dungeons & Dragons</em></li>
-                    <li>the <em>New York Times</em> crossword</li>
-                </ul>
-            </li>
-            <li>music
-                <ul>
-                    <li>guitar</li>
-                    <li>piano</li>
-                    <li>singing</li>
-                    <li>songwriting</li>
-                </ul>
-            </li>
-            <li>sports
-                <ul>
-                    <li>badminton</li>
-                    <li>Taekwon-Do</li>
-                </ul>
-            </li>
+            <li>chess puzzles</li>
+            <li>learning guitar</li>
+            <li>songwriting</li>
+            <li>the <em>New York Times</em> crossword</li>
+            <li>TTRPGs</li>
         </ul>
     </article>
     <footer>
-        <p>&copy; 2025 William So. All rights reserved.</p>
+        <p>Copyright &copy; 2025 William So. All rights reserved.</p>
     </footer>
 </body>
 </html>
