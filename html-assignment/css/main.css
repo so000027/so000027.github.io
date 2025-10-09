@@ -1,11 +1,12 @@
 body {
-    font-size: 18pt;
+    font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header, footer {
-    background-color: #c36;
-    padding: 10px 10% 10px;
+    background-color: #c35;
+    padding: 10px 20%;
+    text-align: center;
 }
 
 .site-title {
@@ -13,7 +14,7 @@ header, footer {
 }
 
 article {
-    padding: 0px 20%;
+    padding: 10px 20%;
 }
 
 blockquote {
