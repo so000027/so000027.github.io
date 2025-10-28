@@ -56,13 +56,14 @@ header {
 .title {
     color: #fff;
     position: absolute;
-    top: 17.5vh;
+    bottom: 2rem;
     width: 100%;
     text-align: center;
 }
 
 .banner {
     width: 60vw;
+    overflow: hidden;
 }
 
 nav {
