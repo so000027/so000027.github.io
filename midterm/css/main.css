@@ -1,0 +1,156 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #add;
+    width: 60vw;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 2.5;
+}
+
+.page {
+    background-color: #bee;
+    margin-bottom: 12px;
+}
+
+main {
+    padding: 12px;
+}
+
+header {
+    position: relative;
+}
+
+
+.title {
+    color: #fff;
+    position: absolute;
+    top: 17.5vh;
+    width: 100%;
+    text-align: center;
+}
+
+.banner {
+    width: 60vw;
+}
+
+nav {
+    font-size: 1.75rem;
+    display: flex;
+}
+
+nav > a {
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+    border-left: 2px solid #888;
+    border-right: 2px solid #888;
+}
+
+nav > a:first-child,
+nav > a:last-child {
+    border: none;
+}
+
+nav a:link {
+    color: #000;
+}
+
+nav a:visited {
+    color: #000;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #888;
+}
+
+#starfish-image {
+    margin-right: 12px;
+    margin-bottom: 12px;
+    width: 200px;
+    float: left;
+}
+
+ul {
+    padding-left: 2rem;
+}
+
+ul > li {
+    list-style: disc;
+}
+
+form {
+    border: 2px solid #888;
+    padding: 12px;
+}
+
+form fieldset {
+    padding: 12px 0px;
+}
+
+form label {
+    font-size: 1.125rem;
+    line-height: 2;
+    display: block;
+}
+
+form input, form textarea {
+    font-size: 1.125rem;
+    width: 100%;
+}
+
+form textarea {
+    resize: none;
+}
+
+#radio > label {
+    display: inline;
+}
+
+#radio input {
+    width: auto;
+}
+
+form button {
+    line-height: 2;
+}
+
+footer {
+    padding: 24px;
+    text-align: right;
+}
