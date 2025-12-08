@@ -1,0 +1,140 @@
+body {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #222;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+    line-height: 2;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 0;
+}
+
+.text-box {
+    color: #222;
+    background-color: #ffe6ac;
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 12px;
+}
+
+.link-button {
+    color: white;
+    background-color: #222;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: inline-block;
+}
+
+header {
+    background-color: #222;
+    .logo {
+        background-color: #c78c06;
+        img {
+            max-width: max-content;
+        }
+    }
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    a {
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 1rem;
+        
+    }
+    a:link, a:visited {
+        color: #c78c06;
+        background-color: #222;
+    }
+    a:hover {
+        color: #222;
+        background-color: #c78c06;
+    }
+    a:active {
+        background-color: #ffe6ac;
+    }
+}
+
+#welcome {
+    position: relative;
+    .text-box {
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        .link-button {
+            color: #222;
+            background-color: #c78c06;
+        }
+    }
+}
+
+main {
+    color: #222;
+    background-color: white;
+}
+
+#about {
+    background-color: #ffe6ac;
+}
+
+#vision {
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .text-box {
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+}
+
+footer {
+    background-color: #222;
+}
+
+@media screen and (min-width: 720px) {
+    
+}
