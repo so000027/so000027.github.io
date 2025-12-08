@@ -1,9 +1,14 @@
 body {
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
     font-size: 16px;
+    font-family: "Open Sans", sans-serif;
     line-height: 0;
-    background-color: #222;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
 }
 
 h1 {
@@ -15,11 +20,12 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 h4 {
-    font-size: 1rem;
+    font-size: 1.15rem;
+    border-bottom: #c78c06 solid;
 }
 
 h1, h2, h3, h4 {
@@ -39,7 +45,6 @@ img {
 }
 
 .content-container {
-    box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -47,7 +52,6 @@ img {
 .text-box {
     color: #222;
     background-color: #ffe6ac;
-    box-sizing: border-box;
     max-width: 1200px;
     padding: 12px;
 }
@@ -57,7 +61,6 @@ img {
     background-color: #222;
     font-size: 1.2rem;
     text-decoration: none;
-    box-sizing: border-box;
     padding: 3rem 2rem;
     display: inline-block;
     border-style: solid;
@@ -103,9 +106,10 @@ header nav {
     }
     form {
         display: flex;
-        padding: 12px;
+        padding: 0.75rem;
         input {
             flex-grow: 1;
+            font-size: 1.2rem;
             padding: 0.75rem;
         }
         button {
@@ -146,13 +150,16 @@ main {
 #about {
     background-color: #ffe6ac;
     img {
-        padding: 12px;
+        padding: 0.75rem;
     }
 }
 
 #services {
-    .content-container > div {
-        padding: 12px 0;
+    padding: 0.75rem 0;
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
     }
     .link-button:hover {
         color: #222;
@@ -179,6 +186,33 @@ main {
         .link-button:hover {
             color: #222;
             background-color: #c78c06;
+        }
+    }
+}
+
+#team {
+    padding: 0.75rem 0;
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+#contact {
+    form {
+        fieldset {
+            padding: 0.75rem 0;
+        }
+        label {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            display: block;
+        }
+        input, textarea {
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 0.75rem;
         }
     }
 }
