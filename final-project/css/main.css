@@ -163,16 +163,13 @@ main {
 
 #vision {
     position: relative;
+    height: fit-content;
     img {
-        width: 100%;
-        height: 100%;
+        position: absolute;
         object-fit: cover;
-        overflow: hidden;
     }
     .text-box {
-        position: absolute;
-        top: 50%;
-        transform: translate(0%, -50%);
+        position: relative;
         color: white;
         background-color: transparent;
         .link-button {
