@@ -79,8 +79,10 @@ img {
 
 header {
     background-color: #222;
+
     .logo {
         background-color: #c78c06;
+
         img {
             max-width: max-content;
         }
@@ -90,6 +92,7 @@ header {
 header nav {
     display: flex;
     flex-direction: column;
+
     a {
         text-align: center;
         text-decoration: none;
@@ -111,6 +114,7 @@ header nav {
     form {
         display: flex;
         padding: 0.75rem;
+
         input {
             flex-grow: 1;
             font-size: 1.2rem;
@@ -128,12 +132,14 @@ header nav {
 
 #welcome {
     position: relative;
+
     .text-box {
         position: absolute;
         top: 50%;
         transform: translate(0%, -50%);
         color: white;
         background-color: rgba(0, 0, 0, 0.6);
+
         .link-button {
             color: #222;
             background-color: #c78c06;
@@ -153,6 +159,7 @@ main {
 
 #about {
     background-color: #ffe6ac;
+
     img {
         padding: 1rem;
     }
@@ -160,6 +167,7 @@ main {
 
 #services {
     padding: 0.75rem 0;
+
     .content-container {
         display: flex;
         flex-direction: column;
@@ -175,6 +183,7 @@ main {
 #vision {
     position: relative;
     height: fit-content;
+
     img {
         position: absolute;
         object-fit: cover;
@@ -183,6 +192,7 @@ main {
         position: relative;
         color: white;
         background-color: transparent;
+
         .link-button {
             background-color: rgba(0, 0, 0, 0.5);
             border-color: #c78c06;
@@ -196,6 +206,7 @@ main {
 
 #team {
     padding: 0.75rem 0;
+
     .content-container {
         display: flex;
         flex-direction: column;
@@ -240,6 +251,7 @@ main {
     width: 100%;
     font-size: 1.2rem;
     line-height: 1rem;
+
     td, th {
         border: #222 1px solid;
         padding: 0.75rem;
@@ -259,6 +271,7 @@ footer {
     color: #c78c06;
     background-color: #222;
     padding: 0 1rem;
+
     a:link, a:visited {
         color: #c78c06;
     }
@@ -277,6 +290,7 @@ footer {
         margin: 0 auto;
         padding: 2rem 0;
         flex-direction: row;
+
         img {
             margin-right: 2rem;
         }
@@ -289,8 +303,48 @@ footer {
 
     #about {
         .content-container {
-            display: flex;
-            flex-direction: column;
+            img {
+                width: 50%;
+                float: left;
+            }
+        }
+    }
+
+    #services {
+        .content-container {
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            grid-template-rows: repeat(3, auto);
+
+            h2 {
+                grid-column: span 6;
+                display: block;
+            }
+            div:nth-child(2) {
+                grid-row: 2;
+                grid-column: 1 / span 3;
+                display: block;
+            }
+            div:nth-child(3) {
+                grid-row: 2;
+                grid-column: 4 / span 3;
+                display: block;
+            }
+            div:nth-child(4) {
+                grid-row: 3;
+                grid-column: 1 / span 2;
+                display: block;
+            }
+            div:nth-child(5) {
+                grid-row: 3;
+                grid-column: 3 / span 2;
+                display: block;
+            }
+            div:nth-child(6) {
+                grid-row: 3;
+                grid-column: 5 / span 2;
+                display: block;
+            }
         }
     }
 }
