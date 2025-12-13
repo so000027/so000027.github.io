@@ -67,7 +67,6 @@ img {
     border-width: 2px;
     border-color: #222;
 }
-
 .link-button::after {
     content: "▸";
     padding-left: 0.5rem;
@@ -79,77 +78,71 @@ img {
 
 header {
     background-color: #222;
+}
 
-    .logo {
-        background-color: #c78c06;
-
-        img {
-            max-width: max-content;
-        }
-    }
+header.logo {
+    background-color: #c78c06;
+}
+header.logo img {
+    max-width: max-content;
 }
 
 header nav {
     display: flex;
     flex-direction: column;
-
-    a {
-        text-align: center;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 2rem;
-        
-    }
-    a:link, a:visited {
-        color: #c78c06;
-        background-color: #222;
-    }
-    a:hover {
-        color: #222;
-        background-color: #c78c06;
-    }
-    a:active {
-        background-color: #ffe6ac;
-    }
-    form {
-        display: flex;
-        padding: 0.75rem;
-
-        input {
-            flex-grow: 1;
-            font-size: 1.2rem;
-            padding: 0.75rem;
-        }
-        button {
-            color: #c78c06;
-            background-color: transparent;
-            border-color: #c78c06;
-            border-width: 2px;
-            border-style: solid;
-        }
-    }
+}
+header nav a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2rem;
+}
+header nav a:link, a:visited {
+    color: #c78c06;
+    background-color: #222;
+}
+header nav a:hover {
+    color: #222;
+    background-color: #c78c06;
+}
+header nav a:active {
+    background-color: #ffe6ac;
+}
+header nav form {
+    display: flex;
+    padding: 0.75rem;
+}
+header nav form input {
+    flex-grow: 1;
+    font-size: 1.2rem;
+    padding: 0.75rem;
+}
+header nav form button {
+    color: #c78c06;
+    background-color: transparent;
+    border-color: #c78c06;
+    border-width: 2px;
+    border-style: solid;
 }
 
 #welcome {
     position: relative;
-
-    .text-box {
-        position: absolute;
-        top: 50%;
-        transform: translate(0%, -50%);
-        color: white;
-        background-color: rgba(0, 0, 0, 0.6);
-
-        .link-button {
-            color: #222;
-            background-color: #c78c06;
-            border-color: #c78c06;
-        }
-        .link-button:hover {
-            color: #c78c06;
-            background-color: #222;
-        }
-    }
+}
+#welcome .text-box {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#welcome .text-box .link-button {
+    color: #222;
+    background-color: #c78c06;
+    border-color: #c78c06;
+}
+#welcome .text-box .link-button:hover {
+    color: #c78c06;
+    background-color: #222;
 }
 
 main {
@@ -159,91 +152,85 @@ main {
 
 #about {
     background-color: #ffe6ac;
-
-    img {
-        padding: 1rem;
-    }
+}
+#about img {
+    padding: 1rem;
 }
 
 #services {
     padding: 0.75rem 0;
-
-    .content-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .link-button:hover {
-        color: #222;
-        background-color: #c78c06;
-        border-color: #222;
-    }
+}
+#services .content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#services .link-button:hover {
+    color: #222;
+    background-color: #c78c06;
+    border-color: #222;
 }
 
 #vision {
     position: relative;
     height: fit-content;
-
-    img {
-        position: absolute;
-        object-fit: cover;
-    }
-    .text-box {
-        position: relative;
-        color: white;
-        background-color: transparent;
-
-        .link-button {
-            background-color: rgba(0, 0, 0, 0.5);
-            border-color: #c78c06;
-        }
-        .link-button:hover {
-            color: #222;
-            background-color: #c78c06;
-        }
-    }
 }
+#vision img {
+    position: absolute;
+    object-fit: cover;
+}
+#vision .text-box {
+    position: relative;
+    color: white;
+    background-color: transparent;
+}
+#vision .text-box .link-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #c78c06;
+}
+#vision .text-box .link-button:hover {
+    color: #222;
+    background-color: #c78c06;
+}
+
 
 #team {
     padding: 0.75rem 0;
-
-    .content-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
+}
+#team .content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-#contact form {
-    fieldset {
-        padding: 0.75rem 0;
-    }
-    label {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        display: block;
-    }
-    input, textarea {
-        width: 100%;
-        font-size: 1.2rem;
-        padding: 0.75rem;
-    }
-    button {
-        color: #c78c06;
-        background-color: #222;
-        font-size: 1.5rem;
-        border-style: solid;
-        border-width: 4px;
-    }
-    button:hover {
-        color: #222;
-        background-color: #c78c06;
-        border-style: outset;
-        border-width: 4px;
-    }
-    button:active {
-        border-style: inset;
-    }
+#contact form fieldset {
+    padding: 0.75rem 0;
+}
+#contact form label {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    display: block;
+}
+#contact form input, textarea {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.75rem;
+}
+#contact form button {
+    color: #c78c06;
+    background-color: #222;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-width: 4px;
+}
+#contact form button:hover {
+    color: #222;
+    background-color: #c78c06;
+    border-style: outset;
+    border-width: 4px;
+}
+#contact form button:active {
+    border-style: inset;
 }
 
 #contact table {
@@ -251,14 +238,13 @@ main {
     width: 100%;
     font-size: 1.2rem;
     line-height: 1rem;
-
-    td, th {
-        border: #222 1px solid;
-        padding: 0.75rem;
-    }
-    th {
-        background-color: #ffe6ac;
-    }
+}
+#contact table td, th {
+    border: #222 1px solid;
+    padding: 0.75rem;
+}
+#contact table th {
+    background-color: #ffe6ac;
 }
 
 #contact iframe {
@@ -271,18 +257,15 @@ footer {
     color: #c78c06;
     background-color: #222;
     padding: 0 1rem;
-
-    a:link, a:visited {
-        color: #c78c06;
-    }
+}
+footer a:link, a:visited {
+    color: #c78c06;
 }
 
 @media screen and (min-width: 720px) {
-    header {
-        .logo {
-            width: max-content;
-            background-color: transparent;
-        }
+    header .logo {
+        width: max-content;
+        background-color: transparent;
     }
 
     header nav {
@@ -290,109 +273,93 @@ footer {
         margin: 0 auto;
         padding: 2rem 0;
         flex-direction: row;
-
-        img {
-            margin-right: 2rem;
-        }
-        a, form {
-            flex-grow: 1;
-            height: min-content;
-            align-self: center;
-        }
+    }
+    header nav img {
+        margin-right: 2rem;
+    }
+    header nav a, form {
+        flex-grow: 1;
+        height: min-content;
+        align-self: center;
     }
 
-    #about {
-        .content-container {
-            img {
-                width: 50%;
-                float: left;
-            }
-        }
+    #about .content-container img {
+        width: 50%;
+        float: left;
     }
 
-    #services {
-        .content-container {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(3, auto);
-            gap: 0.75rem;
-
-            img {
-                height: fit-content;
-            }
-
-            h2 {
-                grid-column: span 6;
-            }
-            div:nth-child(2) {
-                grid-row: 2;
-                grid-column: 1 / span 3;
-            }
-            div:nth-child(3) {
-                grid-row: 2;
-                grid-column: 4 / span 3;
-            }
-            div:nth-child(4) {
-                grid-row: 3;
-                grid-column: 1 / span 2;
-            }
-            div:nth-child(5) {
-                grid-row: 3;
-                grid-column: 3 / span 2;
-            }
-            div:nth-child(6) {
-                grid-row: 3;
-                grid-column: 5 / span 2;
-            }
-        }
+    #services .content-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 0.75rem;
+    }
+    #services .content-container img {
+        height: fit-content;
+    }
+    #services .content-container h2 {
+        grid-column: span 6;
+    }
+    #services .content-container div:nth-child(2) {
+        grid-row: 2;
+        grid-column: 1 / span 3;
+    }
+    #services .content-container div:nth-child(3) {
+        grid-row: 2;
+        grid-column: 4 / span 3;
+    }
+    #services .content-container div:nth-child(4) {
+        grid-row: 3;
+        grid-column: 1 / span 2;
+    }
+    #services .content-container div:nth-child(5) {
+        grid-row: 3;
+        grid-column: 3 / span 2;
+    }
+    #services .content-container div:nth-child(6) {
+        grid-row: 3;
+        grid-column: 5 / span 2;
     }
 
-    #team {
-        .content-container {
-            gap: 0;
-        }
-        .content-container > div:nth-child(2n) {
-            background-color: #ffe6ac;
-
-            img {
-                width: 50%;
-                float: left;
-                margin-right: 1rem;
-            }
-        }
-        .content-container > div:nth-child(2n+1) {
-            background-color: #ffe6ac;
-
-            img {
-                width: 50%;
-                float: right;
-                margin-left: 1rem;
-            }
-        }
+    #team .content-container {
+        gap: 0;
+    }
+    #team .content-container > div:nth-child(2n) {
+        background-color: #ffe6ac;
+    }
+    #team .content-container > div:nth-child(2n) img {
+        width: 50%;
+        float: left;
+        margin-right: 1rem;
+    }
+    #team .content-container > div:nth-child(2n+1) {
+        background-color: #ffe6ac;
+    }
+    #team .content-container > div:nth-child(2n+1) img {
+        width: 50%;
+        float: right;
+        margin-left: 1rem;
     }
 
-    #contact {
-        .content-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, auto);
-            gap: 1rem;
-        }
-
-        h2 {
-            grid-column: span 2;
-        }
-        form {
-            grid-row: 2;
-        }
-        div:nth-child(3) {
-            grid-row: 3;
-            grid-column: span 2;
-            padding-bottom: 1rem;
-        }
-        div:nth-child(4) {
-            grid-row: 2;
-            grid-column: 2;
-        }
+    #content .content-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 1rem;
+    }
+    #content h2 {
+        grid-column: span 2;
+    }
+    #content form {
+        grid-row: 2;
+    }
+    #content div:nth-child(3) {
+        grid-row: 3;
+        grid-column: span 2;
+        padding-bottom: 1rem;
+    }
+    #content div:nth-child(4) {
+        grid-row: 2;
+        grid-column: 2;
     }
 }
