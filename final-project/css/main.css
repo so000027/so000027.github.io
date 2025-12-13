@@ -341,24 +341,24 @@ footer a:link, a:visited {
         margin-left: 1rem;
     }
 
-    #content .content-container {
+    #contact .content-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
         gap: 1rem;
     }
-    #content h2 {
+    #contact h2 {
         grid-column: span 2;
     }
-    #content form {
+    #contact form {
         grid-row: 2;
     }
-    #content div:nth-child(3) {
+    #contact div:nth-child(3) {
         grid-row: 3;
         grid-column: span 2;
         padding-bottom: 1rem;
     }
-    #content div:nth-child(4) {
+    #contact div:nth-child(4) {
         grid-row: 2;
         grid-column: 2;
     }
